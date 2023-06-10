@@ -119,6 +119,8 @@ endmodule
 ### TIMING DIGRAMS  
 ## Encoder:
 
+![timing encoder](https://github.com/premnath621/Experiment-08-Encoders-and-decoders-/assets/130074217/fe09436c-e1af-4d90-b523-d6727f32bef5)
+
 
 
 ## Decoder:
