@@ -129,9 +129,11 @@ endmodule
 
 ### TRUTH TABLE 
 ## Encoder:
+![truth encoder](https://github.com/premnath621/Experiment-08-Encoders-and-decoders-/assets/130074217/78d0aa7f-2e16-4226-9b58-b4c13a8904db)
 
 
 ## Decoder:
+![truth decoder](https://github.com/premnath621/Experiment-08-Encoders-and-decoders-/assets/130074217/e10308f2-45f6-4118-be18-d681d6311394)
 
 
 
