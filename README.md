@@ -55,16 +55,48 @@ D7 = X Y Z
 ## Figure -04 8 to 3 Decoder implementation 
 
 ### Procedure
-/* write all the steps invloved */
+1.create module encoder and decoder.
+
+2.Get inputs and outputs for encoders and decoders.
+
+3.perform or operation for encoder and and logic for decoders.
+
+4.perform RTL LOGIC and get waveform
 
 
 
 ### PROGRAM 
+~~~
 /*
 Program for Endocers and Decoders  and verify its truth table in quartus using Verilog programming.
-Developed by: 
-RegisterNumber:  
+Developed by: E.Premnath
+RegisterNumber: 2122222050045
 */
+i]Encoder
+
+module encoder(a,b,c,d0,d1,d2,d3,d4,d5,d6,d7);
+output a,b,c;
+input d0,d1,d2,d3,d4,d5,d6,d7;
+or(a,d4,d5,d6,d7);
+or(b,d2,d3,d6,d7);
+or(c,d1,d3,d5,d7);
+endmodule
+
+ii]Decoder
+
+module decoder(d0,d1,d2,d3,d4,d5,d6,d7,a,b,c);
+output d0,d1,d2,d3,d4,d5,d6,d7;
+input a,b,c;
+assign d0 = (~a&~b&~c);
+assign d1 = (~a&~b&c);
+assign d2 = (~a&b&~c);
+assign d3 = (~a&b&c);
+assign d4 = (a&~b&~c);
+assign d5 = (a&~b&c);
+assign d6 = (a&b&~c);
+assign d7 = (a&b&c);
+endmodule
+~~~
 
 
 
@@ -72,8 +104,12 @@ RegisterNumber:
 
 
 ### RTL LOGIC  
+## Encoder:
+![rtl logic encoder](https://github.com/premnath621/Experiment-08-Encoders-and-decoders-/assets/130074217/5d552462-f461-4b30-8dcc-150bb85f2d6a)
 
 
+## Decoder:
+![rtl logic decoder](https://github.com/premnath621/Experiment-08-Encoders-and-decoders-/assets/130074217/c0bcbfa8-b7c6-44ab-a960-0d9f0d4fe2d7)
 
 
 
@@ -81,12 +117,21 @@ RegisterNumber:
 
 
 ### TIMING DIGRAMS  
+## Encoder:
 
+
+
+## Decoder:
+![time decoder](https://github.com/premnath621/Experiment-08-Encoders-and-decoders-/assets/130074217/6cfe9973-eba1-4c0d-8bf5-e6898bf5a69b)
 
 
 
 
 ### TRUTH TABLE 
+## Encoder:
+
+
+## Decoder:
 
 
 
@@ -94,3 +139,4 @@ RegisterNumber:
 
 
 ### RESULTS 
+Thus the program to design encoder and decoder is executed successfully .
